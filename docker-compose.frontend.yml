@@ -5,7 +5,7 @@ version: '3'
 
 services:
   kobocat:
-    image: simatei/appid-backend:latest
+    image: upandeltd/appid-backend:latest
     hostname: kobocat
     env_file:
       - ../kobo-env/envfile.txt
@@ -44,7 +44,7 @@ services:
           - kobocat.docker.container
 
   kpi:
-    image: simatei/appid-frontend:latest
+    image: upandeltd/appid-frontend:latest
     hostname: kpi
     env_file:
       - ../kobo-env/envfile.txt
